@@ -8,7 +8,7 @@ getgenv().Options = {
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-    Title = "AFS - tobias020108back.",
+    Title = "AFS - krolttz.",
     Style = 3,
     SizeX = 500,
     SizeY = 350,
@@ -61,16 +61,16 @@ local D = Y.Dropdown({
 })
 
 local AE = Y.Button({
-    Text = "https://discord.gg/EvTCW7CXSK",
+    Text = "https://discord.gg/du5mEHqHX3",
     Callback = function()
-        print("https://discord.gg/EvTCW7CXSK")
+        print("https://discord.gg/du5mEHqHX3")
     end
 })
 
 local AE2 = Y.Button({
     Text = "Copy Discord Invite",
     Callback = function()
-        setclipboard("https://discord.gg/EvTCW7CXSK")
+        setclipboard("https://discord.gg/du5mEHqHX3")
     end
 })
 
