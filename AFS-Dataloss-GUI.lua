@@ -8,7 +8,7 @@ getgenv().Options = {
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-    Title = "AFS - krolttz.",
+    Title = "AFS - by Krolttz, Benja and sussy bakita",
     Style = 3,
     SizeX = 500,
     SizeY = 350,
@@ -29,7 +29,7 @@ Options.UI = Y.Button({
         if Options.Current == "None" then return Options.UI:SetText("Please Select a Version!") end
 
         if Type == "Start Dataloss" then
-            game:GetService("").Remote.SetDungeonSetting:FireServer("Theme",  Options[Options.Current])
+            game:GetService("ReplicatedStorage").Remote.SetDungeonSetting:FireServer("Theme",  Options[Options.Current])
             TextField:SetText("Started")
         elseif Type == "Undo Dataloss" then
             game:GetService("ReplicatedStorage").Remote.SetDungeonSetting:FireServer("Theme", Options.Undo)
